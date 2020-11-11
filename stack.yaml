@@ -1,0 +1,9 @@
+resolver: nightly-2020-11-11
+packages:
+- .
+extra-deps:
+- polysemy-1.4.0.0
+- polysemy-extra-0.1.1.0
+- Cabal-3.0.2.0
+- polysemy-zoo-0.7.0.1
+- compact-0.2.0.0

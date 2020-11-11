@@ -1,0 +1,25 @@
+name:                polysemy-vinyl
+version:             0.1.0.0
+git:                 https://gitlab.com/homotopic-tech/polysemy-vinyl
+license:             MIT
+author:              "Daniel Firth"
+maintainer:          "dan.firth@homotopic.tech"
+copyright:           "dan.firth@homotopic.tech"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            Functions for mapping vinyl records in polysemy.
+category:            Polysemy Vinyl
+
+description:         Extra functions for using vinyl records in polysemy.
+
+dependencies:
+- base >= 4.7 && < 5
+- polysemy-extra
+- polysemy
+- vinyl
+
+library:
+  source-dirs: src
