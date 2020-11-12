@@ -34,6 +34,7 @@ rContramapInput :: (RMap xs, Members '[Input (Rec f xs)] r)
                 -> Sem (Input (Rec g xs) ': r) a
                 -> Sem r a
 rContramapInput k = contramapInput (rmap k)
+{-# INLINE rContramapInput #-}
 
 -- | Reinterpreting version of `rContramapInput`.
 --
@@ -44,6 +45,7 @@ rContramapInput' :: RMap xs
                  -> Sem (Input (Rec g xs) ': r) a
                  -> Sem (Input (Rec f xs) ': r) a
 rContramapInput' k = raiseUnder >>> rContramapInput k
+{-# INLINE rContramapInput' #-}
 
 -- | Map an `Output` containing a `Rec` covariantly via a natural transformation.
 -- Uses `rmap`.
@@ -55,6 +57,7 @@ rMapOutput :: (RMap xs, Members '[Output (Rec g xs)] r)
            -> Sem (Output (Rec f xs) ': r) a
            -> Sem r a
 rMapOutput k = mapOutput (rmap k)
+{-# INLINE rMapOutput #-}
 
 -- | Reinterpreting version of `rMapOutput`.
 --
@@ -65,3 +68,4 @@ rMapOutput' :: RMap xs
             -> Sem (Output (Rec f xs) ': r) a
             -> Sem (Output (Rec g xs) ': r) a
 rMapOutput' k = raiseUnder >>> rMapOutput k
+{-# INLINE rMapOutput' #-}
