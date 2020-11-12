@@ -8,6 +8,7 @@ Extra functions for using vinyl records with polysemy.
 -}
 {-# LANGUAGE DataKinds     #-}
 {-# LANGUAGE RankNTypes    #-}
+{-# LANGUAGE PolyKinds     #-}
 {-# LANGUAGE TypeOperators #-}
 module Polysemy.Vinyl (
   rContramapInput

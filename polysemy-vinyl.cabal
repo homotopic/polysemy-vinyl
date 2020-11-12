@@ -7,12 +7,12 @@ cabal-version: 1.12
 name:           polysemy-vinyl
 version:        0.1.0.0
 synopsis:       Functions for mapping vinyl records in polysemy.
-description:    Extra functions for using vinyl records in inputs and outputs in polysemy.
+description:    Extra functions for using vinyl records in polysemy.
 category:       Polysemy Vinyl
 author:         Daniel Firth
 maintainer:     dan.firth@homotopic.tech
 copyright:      dan.firth@homotopic.tech
-license:        BSD3
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
