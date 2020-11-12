@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           polysemy-vinyl
-version:        0.1.1.0
+version:        0.1.2.0
 synopsis:       Functions for mapping vinyl records in polysemy.
 description:    Extra functions for using vinyl records in polysemy.
 category:       Polysemy Vinyl
