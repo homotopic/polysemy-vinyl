@@ -1,5 +1,9 @@
 # Changelog for polysemy-vinyl
 
+## v0.1.4.0
+
+* Fix export of `runInputConstFC`.
+
 ## v0.1.3.0
 
 * Add `runInputConstFC`.

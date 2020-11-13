@@ -24,6 +24,7 @@ module Polysemy.Vinyl (
 , separateRecInput'
 , stripRecInput
 , endRecInput
+, runInputConstFC
 ) where
 
 import Control.Arrow
