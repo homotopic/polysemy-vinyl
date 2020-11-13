@@ -121,5 +121,5 @@ stripRecInput = reinterpret \case
 -- @since 0.1.2.0
 endRecInput :: Sem (Input (Rec f '[]) ': r) a -> Sem r a
 endRecInput = interpret \case
-  Input -> return $ RNil
+  Input -> return RNil
 {-# INLINE endRecInput #-}
