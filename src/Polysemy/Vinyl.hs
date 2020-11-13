@@ -29,6 +29,7 @@ module Polysemy.Vinyl (
 import Control.Arrow
 import Control.Applicative
 import Data.Vinyl
+import Data.Vinyl.Functor
 import Polysemy
 import Polysemy.Extra
 import Polysemy.Input
@@ -123,3 +124,11 @@ endRecInput :: Sem (Input (Rec f '[]) ': r) a -> Sem r a
 endRecInput = interpret \case
   Input -> return RNil
 {-# INLINE endRecInput #-}
+
+-- | Like `runInputConstF` but for vinyl composed functors.
+runInputConstFC :: forall b f g r a.
+                   f (g b)
+                -> Sem (Input ((f :. g) b) ': r) a
+                -> Sem r a
+runInputConstFC f = runInputConstF @b @(f :. g) (Compose f)
+{-# INLINE runInputConstFC #-}
