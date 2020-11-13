@@ -126,6 +126,8 @@ endRecInput = interpret \case
 {-# INLINE endRecInput #-}
 
 -- | Like `runInputConstF` but for vinyl composed functors.
+--
+-- @since 0.1.3.0
 runInputConstFC :: forall b f g r a.
                    f (g b)
                 -> Sem (Input ((f :. g) b) ': r) a
