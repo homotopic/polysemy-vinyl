@@ -1,11 +1,11 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.2.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 
 name:           polysemy-vinyl
-version:        0.1.4.0
+version:        0.1.5.0
 synopsis:       Functions for mapping vinyl records in polysemy.
 description:    Extra functions for using vinyl records in polysemy.
 category:       Polysemy Vinyl
@@ -33,7 +33,8 @@ library
   ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
-    , polysemy
-    , polysemy-extra >=0.1.6.0
-    , vinyl
+    , polysemy >=1.3 && <1.7
+    , polysemy-extra >=0.1.6.0 && <0.3
+    , polysemy-several ==0.1.*
+    , vinyl >=0.10.0 && <0.14
   default-language: Haskell2010
